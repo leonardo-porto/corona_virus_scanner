@@ -1,3 +1,23 @@
+h1{
+
+    color: seashell;
+}
+
+@keyframes pisca{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+
+        opacity: 1;
+    }
+
+
+}
+
+
 body{
 
     background-color: black;
@@ -36,4 +56,12 @@ footer{
     position: absolute;
     bottom: 0px;
     text-align: center;
+}
+
+#mortes{
+
+    color: red;
+
+    animation: pisca 1s linear infinite;
+
 }
