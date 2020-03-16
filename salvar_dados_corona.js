@@ -24,7 +24,7 @@ var array = []
 
 req.headers({
 	"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-	"x-rapidapi-key": "310ebf3c3bmsh66138384eae6c5bp1d8090jsnae9bf8df84f8"
+	"x-rapidapi-key": "chave de acesso"
 });
 
 
@@ -83,6 +83,13 @@ req.end(function (res) {
             })
 
             array[i].save()
+            console.log('dados atualizados em: ' + new Date())
+
+           fs.writeFile('./corona_file.json', JSON.stringify(corona.countries_stat), function (err) {
+
+           console.log('dados salvos')
+
+           })
 
 
         }
