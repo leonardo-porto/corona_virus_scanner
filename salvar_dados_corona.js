@@ -65,6 +65,32 @@ req.end(function (res) {
 
     }
 
+    function atualizarDados() {
+
+
+        for (i = 0; i < corona.countries_stat.length; i++){
+
+            array[i] = new DadosPais({
+
+                nome_pais:corona.countries_stat[i].country_name,
+                casos: corona.countries_stat[i].cases,
+                mortes: corona.countries_stat[i].deaths,
+                regiao: corona.countries_stat[i].region,
+                total_recuperados: corona.countries_stat[i].total_recovered,
+                novas_mortes:corona.countries_stat[i].new_deaths,
+                novos_casos: corona.countries_stat[i].new_cases,
+                casos_serios: corona.countries_stat[i].serious_critical
+            })
+
+            array[i].save()
+
+
+        }
+
+    }
+
+    setInterval(atualizarDados, 1000*60*60)
+
 
 
 
