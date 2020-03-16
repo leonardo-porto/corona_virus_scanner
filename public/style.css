@@ -1,0 +1,39 @@
+body{
+
+    background-color: black;
+    color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input{
+
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: darkgray;
+    margin-bottom: 10px;
+
+}
+
+button{
+
+    width: 200px;
+    height: 40px;
+    background-color: royalblue;
+    border-radius: 7px;
+}
+
+img{
+
+    width: 200px;
+}
+
+footer{
+
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}

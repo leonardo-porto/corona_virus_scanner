@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid - 19 - Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Covid-19 - Scanner</h1>
+
+
+    <h3>Nome do país: <%=nom%></h3>
+    <h3>Casos: <%=cas%></h3>
+    <h3>Mortes: <%=mor%></h3>
+    <h3>Regiões: <%=reg%></h3>
+    <h3>Total de recuperados: <%=total_rec%></h3>
+    <h3>Novas mortes: <%=novas_mor%></h3>
+    <h3>Novos caos: <%=novos_cas%></h3>
+    <h3>Casos sérios: <%=casos_ser%></h3><br>
+
+    <form action="/find" method="GET">
+        <button type="submit">início</button>
+    </form>
+
+
+
+
+</body>
+
+</html>
